@@ -115,6 +115,10 @@ public class Player : MonoBehaviour {
         }
     }
 
+    public float GetPlayerHealth()
+    {
+        return health;
+    }
     private void Die()
     {
         Destroy(gameObject);

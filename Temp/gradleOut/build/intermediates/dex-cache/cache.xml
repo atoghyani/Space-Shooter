@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Arian/Repos/Unity2D/Space Shooter/Space Shooter/Temp/gradleOut/libs/unity-classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.3"
+        sha1="d20747339cb26185f9d4ec2a6b3583d18097118d">
+        <dex dex="/Users/Arian/Repos/Unity2D/Space Shooter/Space Shooter/Temp/gradleOut/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Arian/.gradle/caches/transforms-1/files-1.1/unity-ads.aar/8bc5aff864c224385bc0674c426b1b90/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.3"
+        sha1="e7005ffa9078991e5b1bd3943cb649234308e89c">
+        <dex dex="/Users/Arian/Repos/Unity2D/Space Shooter/Space Shooter/Temp/gradleOut/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+
+</items>

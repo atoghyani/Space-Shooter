@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 212821750231139516}
   - component: {fileID: 114035180923607754}
   - component: {fileID: 60308239909635436}
+  - component: {fileID: 114953658075946522}
+  - component: {fileID: 114756354933439070}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -117,6 +119,59 @@ MonoBehaviour:
   projectileFiringPeriod: 0.05
   moveX: Mouse X
   moveY: Mouse Y
+--- !u!114 &114756354933439070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932529282797504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 1
+  m_SendInterval: 0.033333335
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
+--- !u!114 &114953658075946522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932529282797504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 108
+    i1: 131
+    i2: 97
+    i3: 90
+    i4: 104
+    i5: 70
+    i6: 212
+    i7: 54
+    i8: 40
+    i9: 72
+    i10: 245
+    i11: 191
+    i12: 202
+    i13: 20
+    i14: 94
+    i15: 38
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!212 &212821750231139516
 SpriteRenderer:
   m_ObjectHideFlags: 1

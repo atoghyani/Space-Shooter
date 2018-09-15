@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Networking;
 
 
-public class Player : MonoBehaviour {
+public class Player :NetworkBehaviour {
 
     //config parameters
     [Header("player")]
@@ -45,11 +46,20 @@ public class Player : MonoBehaviour {
 
     void Update ()
     {
+        if (!isLocalPlayer)
+        {
+            return;
+        }
         Move();
-        Fire();
-	}
+        CmdFire();
 
-    private void Fire()
+    }
+
+    public override void OnStartLocalPlayer()
+    {
+        GetComponent<SpriteRenderer>().color = Color.green;
+    }
+    [Command] void CmdFire()
     {
         if(Input.GetButtonDown("Fire1"))
         {
@@ -69,6 +79,7 @@ public class Player : MonoBehaviour {
             GameObject laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
             AudioSource.PlayClipAtPoint(shootSound,Camera.main.transform.position,shootSoundVolume);
+            NetworkServer.Spawn(laser);
             yield return new WaitForSeconds(projectileFiringPeriod);
         }
     }
